@@ -35,6 +35,10 @@ const userSchema = new mongoose.Schema(
 			default:
 				"https://png.pngtree.com/png-vector/20191110/ourmid/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg",
 		},
+		answer: {
+			type: String,
+			required: [true, "Answer is required"],
+		},
 	},
 	{ timestamps: true },
 );
